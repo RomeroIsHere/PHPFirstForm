@@ -1,11 +1,11 @@
 <?php
-$servername = "localhost";
-$username = "phpAccess";
-$password = "phpHasPassword";
+$DBservername = "localhost";
+$DBusername = "phpAccess";
+$DBpassword = "phpHasPassword";
 $dbname = "userRegistry";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($DBservername, $DBusername, $DBpassword, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
