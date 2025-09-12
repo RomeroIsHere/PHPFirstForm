@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        .redText{
+            color: #FF332200;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crea tu Perfil de Usuario</h1>
+    <form action="shower.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>
+                Informacion Basica
+            </legend>
+            <label for="username">
+                Nombre de Usuario<span class="redText">*</span>
+            </label>
+            <br>
+            <input type="text" name="username" placeholder="Escribe tu Nombre Aqui" id="username"  >
+            <br>
+            <label for="password">
+                Contraseña<span class="redText">*</span>
+            </label>
+            <br>
+            <input type="password" name="password" placeholder="Escribe tu Contraseña Aqui" id="password"  >
+            <br>
+            <label for="email">
+                Correo Electronico<span class="redText">*</span>
+            </label>
+            <br>
+            <input type="email" name="email" placeholder="Escribe tu Correo Electronico Aqui" id="email"  >
+            <br>
+            <label for="phone">
+                Numero de Telefono<span class="redText">*</span>
+            </label>
+            <br>
+            <input type="tel" name="phone" placeholder="+52 00000000" id="phone"  >
+            <br>
+            <label for="website">
+                URL de tu sitio Personal
+            </label>
+            <br>
+            <input type="url" name="website" placeholder="www.example.com" id="website">
+        </fieldset>
+        <fieldset>
+            <legend>Informacion Adicional</legend>
+            <label for="age">
+                Edad
+            </label>
+            <br>
+            <input type="number" min="0" name="age" placeholder="00" id="age">
+            <br>
+            <label for="birthday">
+                Edad
+            </label>
+            <br>
+            <input type="date" name="birthday" placeholder="12/31/1999" id="birthday">
+            <br>
+            <label for="satisfaction">
+                Satisfaccion
+            </label>
+            <br>
+            <input type="range" min="0" max="99" step="1" name="satisfaction" placeholder="10" id="satisfaction" oninput="this.nextElementSibling.value = this.value">
+            <output>50</output>
+            
+            <br>
+
+            <label for="favcolor">
+                Color Favorito
+            </label>
+            <br>
+            <input type="color" name="favcolor" value="#FFFFFF" id="favcolor">
+            <br>
+            
+            <label for="country">
+                Paises
+            </label>
+            <br>
+            <select name="country" id="country">
+                <option value="">-- Selecciona una Opción</option>
+                <option value="Mexico">Mexico</option>
+                <option value="España">España</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+            <br>
+            <label for="city">
+                Ciudad
+            </label>
+            <br>
+            <input list="city-list"" name="city" id="city" placeholder="Escribe una Ciudad">
+            <datalist id="city-list">
+                <option value="Lagos de Moreno"></option>
+                <option value="Guadalajara"></option>
+
+                <option value="Madrid"></option>
+                <option value="Barcelona"></option>
+
+            </datalist>
+            <br>
+            <label for="avatar">
+                Imagen de Perfil
+            </label>
+            <br>
+            <input type="file" id="avatar" name="avatar">
+            <br>
+            <label for="interests[]">
+                Temas que Te Interesan
+            </label>
+            <br>
+            <input type="checkbox" id="Tecnologia" name="interests[]" value="Tecnologia">
+            <label for="Tecnologia">Tecnologia</label>
+            <br>
+            <input type="checkbox" id="Deportes" name="interests[]" value="Deportes">
+            <label for="Deportes">Deportes</label>
+            <br>
+            <!-- <input type="checkbox" id="Tecnologia" name="interests" value="Tecnologia">
+            <label for="Tecnologia">Tecnologia</label>
+            <br>
+            <input type="checkbox" id="Tecnologia" name="interests" value="Tecnologia">
+            <label for="Tecnologia">Tecnologia</label> -->
+            <br>
+            <label for="subscribe-level">
+                Selecciona Nivel de Subscripcióm
+            </label>
+            <input type="radio" name="subscribe-level" id="basico" value="Basico" >
+            <label for="basico">Basico</label>
+            <input type="radio" name="subscribe-level" id="premium" value="Premium" checked>
+            <label for="premium">Premium</label>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
+            <!-- <input type="button" value="Boton Generico"> -->
+            <br>
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
