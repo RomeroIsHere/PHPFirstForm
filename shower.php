@@ -14,7 +14,8 @@
     <div class="titleDiv">Prueba de PHP</div>
 
     <?php
-    include 'datos.php'
+    include 'datos.php';
+    include 'register.php';
     ?>
     <div style="display: flex; flex-direction: row;">
         <a href="./formulario.html"><button type="button" id="start">Formulario</button></a>
