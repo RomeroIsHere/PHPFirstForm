@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <!-- Por Ahora Desactivo el asterisco. Se Agregan de Manera Manual -->
-    <style>
+    <!-- <style>
         .redText{
             color: #FF332200;
         }
-    </style>
+    </style> -->
+    <link href="./styles/FormStyle.css" rel="stylesheet" >
 </head>
 <body>
     <h1>Crea tu Perfil de Usuario</h1>
@@ -22,25 +23,25 @@
                 Nombre de Usuario<span class="redText">*</span>
             </label>
             <br>
-            <input type="text" name="username" placeholder="Escribe tu Nombre Aqui" id="username"  >
+            <input type="text" name="username" placeholder="Escribe tu Nombre Aqui" id="username" required>
             <br>
             <label for="password">
                 Contraseña<span class="redText">*</span>
             </label>
             <br>
-            <input type="password" name="password" placeholder="Escribe tu Contraseña Aqui" id="password"  >
+            <input type="password" name="password" placeholder="Escribe tu Contraseña Aqui" id="password" required>
             <br>
             <label for="email">
                 Correo Electronico<span class="redText">*</span>
             </label>
             <br>
-            <input type="email" name="email" placeholder="Escribe tu Correo Electronico Aqui" id="email"  >
+            <input type="email" name="email" placeholder="Escribe tu Correo Electronico Aqui" id="email" required>
             <br>
             <label for="phone">
-                Numero de Telefono<span class="redText">*</span>
+                Numero de Telefono
             </label>
             <br>
-            <input type="tel" name="phone" placeholder="+52 00000000" id="phone"  >
+            <input type="tel" name="phone" placeholder="+52 00000000" id="phone">
             <br>
             <label for="website">
                 URL de tu sitio Personal
@@ -133,10 +134,10 @@
             <input type="radio" name="subscribe-level" id="premium" value="Premium" checked>
             <label for="premium">Premium</label>
             <br>
+            <!-- Todo Input es In-Line -->
             <input type="submit" value="Enviar">
             <input type="reset" value="Resetear">
             <!-- <input type="button" value="Boton Generico"> -->
-            <br>
             <br>
         </fieldset>
     </form>
