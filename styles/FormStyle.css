@@ -1,26 +1,123 @@
+/* Commented out: Personal Taste Styles */
 :root {
-  --borderColour: rgba(0, 85, 211, 0.4);
+
+    --primary-color:#017bff;
+    --danger-color:#DC3444;
+    --info-color:#18A2B8;
+    --accent-color:#28a745;
+  /* --borderColour: rgba(0, 85, 211, 0.4); */
 }
 
-.redText{
+/* .redText{
     color: #ff1500;
+} */
+
+body {
+    background-color: #f0f0ff;/*Equivalent to Ghostwhite*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 10%; */
 }
 
 h1 {
-    color: rgb(157, 53, 255);
+    text-align: center;
+    /* text-shadow: 10px 10px 5px #8a8a8a; */
 }
 
 form {
-    border: 4px solid var(--borderColour);
+    background-color: #ffffff;
+    max-width: 500px;
+    margin:0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px 12px rgba(88, 88, 88, 0.2);
+    /* border: 4px solid var(--borderColour);
     border-radius: 1%;
     box-shadow: -10px 10px 10px #8a8a8a;
+    padding: 10px; */
+}
+
+label {
+    color: #1212129e;
+    font-weight: 200;
 }
 
 fieldset {
-    border: 3px solid var(--borderColour);
-    border-radius: 2%;
+    border-style: none;
+
+    /* border: 3px solid var(--borderColour);
+    border-radius: 2%;  */
+}
+fieldset legend {
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
-input {
-    border: 2px solid var(--borderColour);
+input, select {
+    padding: 5px;
+    border: 1px solid #e9e9e9;
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 5px;
+    box-sizing: border-box;
 }
+
+input:focus {
+    border: 1px solid var(--accent-color);
+}
+
+input[type='checkbox'],
+input[type='radio'],
+input[type='range'] {
+accent-color: var(--accent-color);
+width: 100px;
+}
+
+input[type='file']::-webkit-file-upload-button, input[type='file']::file-selector-button{
+    background: var(--accent-color);
+    border-radius: 3px;
+    padding: 8px 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn {
+    margin: 5px;
+    padding: 12px 15px;
+    border-radius: 3px;
+    color: #ffffff;
+    border-style: none;
+    font-weight: 800;
+    width: 200px;
+    /* box-shadow: inset 15px 15px 15px #ffffff49; */
+    
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+}
+
+
+.btn-danger{
+    background-color: var(--danger-color);
+}
+
+.btn-info{
+    color: #000;
+    background-color: var(--info-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: brightness(1.35); 
+    /* Originalmente 0.85 en vez de 1.35 */
+    /* box-shadow: inset 15px 15px 15px #ffffff49; */
+}
+
+/* input[type='range']{
+    width: 100%;
+} */
+
+/* input:required:focus {
+    border: 2px solid #ff1500;
+} */
