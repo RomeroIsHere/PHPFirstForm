@@ -1,0 +1,35 @@
+body{
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background-color: #2C314D;
+    border-top: 5px solid #4189C7;
+    color: #FFFFFF;
+    max-width: 282px;
+    max-height: 256px;
+    padding: 30px 0px;
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+
+.handle {
+    height: 20px;
+    font-size: 16pt;
+}
+.total-followers {
+    font-size: 20pt;
+}
+.wide-followers{
+    font-size: 16px;
+    font-kerning: 20pt;
+}
+
+.todays-count{
+    color: #7fffd4;
+    font-size: 16px;
+}
