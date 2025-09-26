@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom right ,#353535,#00a89a);
+    background-attachment: fixed;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    width: 100%;
+    background-color: linear-gradient(#353535,#005c39);
+}
+button{
+    width: 100%;
+    padding: 20px;
+    text-decoration: none;
+    background-image:linear-gradient(#ffffff,#95fffa);
+    background-attachment: fixed;
+    border-radius: 10px;
+    transition: 0.7s ease-in-out;
+}
+button:hover{
+    border-radius: 15px;
+    filter:hue-rotate(.7) brightness(1.3);
+    border-radius: 15px;
+}
