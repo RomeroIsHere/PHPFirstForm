@@ -1,0 +1,40 @@
+/* tipos de Display mas Usados */
+/* Block */
+/* Tamaño determindao por Height y Width */
+
+.medidas{
+    /* display: block; */
+    background-color: #7bdb7b;
+    width: 100px;
+    height: 100px;
+}
+
+/* Inline */
+.Inline{
+    display:inline;
+}
+/* Inline Block  */
+.especial{
+    display: inline-block;
+}
+li ul{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: indigo;
+    color: white;
+}
+/* Flex */
+/* Grid */
+
+
+
+
+.InlineBlock{
+    display: inline-block;
+}
+.Flex{
+    display: flex;
+}
+.Grid{
+    display:grid;
+}

@@ -1,0 +1,21 @@
+/* Selector Descendiente */
+div p {
+color: red;
+}
+/* Hijo Directo */
+.directo > p{
+    color:green;
+}
+
+/* Adyacente */
+
+div+p {
+    font-size: 30px;
+}
+
+/* General Hermanos */
+
+div~p{
+background-color: aqua;
+padding: 15px;
+}
