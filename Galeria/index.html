@@ -3,20 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
+    <title>Galería</title>
     <link href="./styles/style.css" rel="stylesheet" >
 </head>
 <body>
-    <section>
-        <h2>Galeria de Imagenes</h2>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+    <section class="contenedor">
+        <h2>Galería de Imagenes</h2>
+        <div class="galeria-inline">
+            <img src="./img/OutlineStar.svg" alt="Imagen de Estrella"
+            onclick="openModal('modal1', 'Estrella SVG')">
+            <img src="./img/Sakura.jpg" alt="Imagen de Arbol de Sakura"
+            onclick="openModal('modal2', 'Arbol de Sakura')">
+            <img src="./img/NanaNanaNanaNanaNANABATMANjpg.jpg" alt="Imagen de una Banana"
+            onclick="openModal('modal3', 'Banana For Scale')">
+            <img src="./img/Plane.jpg" alt="Imagen de Aviones"
+            onclick="openModal('modal4', 'Iconografia de Aviones')">
+            <img src="./img/Sakana.jpg" alt="Un pescado con Sushi como su interior"
+            onclick="openModal('modal5', 'Pescado Surrealista')">
+            <img src="./img/TheNight.jpg" alt="Imagen de Lago de Noche"
+            onclick="openModal('modal6', 'Lago de Noche')">
         </div>
     </section>
+<span>
+    <div id="modal1" class="modal">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <img src="./img/OutlineStar.svg" alt="Imagen de Estrella">
+    <div class="caption"></div>
+    </div>
+
+    <div id="modal2" class="modal">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <img src="./img/Sakura.jpg" alt="Imagen de Arbol de Sakura">
+    <div class="caption"></div>
+    </div>
+
+    <div id="modal3" class="modal">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <img src="./img/NanaNanaNanaNanaNANABATMANjpg.jpg" alt="Imagen de una Banana">
+    <div class="caption"></div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <img src="./img/Plane.jpg" alt="Imagen de Aviones">
+        <div class="caption"></div>
+    </div>
+    <div id="modal5" class="modal">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <img src="./img/Sakana.jpg" alt="Un pescado con Sushi como su interior">
+        <div class="caption"></div>
+    </div>
+    <div id="modal6" class="modal">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <img src="./img/TheNight.jpg" alt="Imagen de Lago de Noche">
+        <div class="caption"></div>
+    </div>
+</span>
+<script>
+function openModal(modalId, caption) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+  let message = modal.querySelector(".caption");
+  message.innerText = caption;
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+    modal.querySelector(".caption").innerText = "";
+  }, 300);
+}
+</script>
 </body>
 </html>
