@@ -19,7 +19,7 @@ h2{
 .galeria-inline{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: flex-start;
     flex-wrap: wrap;
 }
