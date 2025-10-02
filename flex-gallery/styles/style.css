@@ -15,25 +15,32 @@ h2{
 .contenedor{
     padding: 50px 20px;
 }
-.galeria-inline img{
-    display: inline-block;
-    width: 270px;
-    height: 160px;
-    border: 2px solid #006d43;
-    cursor: pointer;
-    transition: transform 0.5s ease;
+
+.galeria-inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
 
+.galeria-inline img{
+    display: inline-block;
+    max-height: 180px;
+    margin-top: 10px;
+    border: 2px solid #006d43;
+    cursor: pointer;
+    
+    transition: transform 0.5s ease;   
+    
+}
+.wide{
+  width: 640px;
+}
 .galeria-inline img:hover {
   transform: scale(1.1);
 
 }
-
-.galeria-inline{
-    text-align: center;
-}
-
-
 
 /* The Modal (background) */
 .modal {
