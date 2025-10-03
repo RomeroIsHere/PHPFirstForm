@@ -25,6 +25,7 @@ h2{
 }
 
 button.grid-item{
+    background-color: teal;
     display: inline-block;
     width: 100%;
 }
@@ -36,6 +37,16 @@ button.grid-item{
     gap: 10px;
 
     margin: 0 auto;
+}
+
+.item-span-col{
+    background-color: chartreuse;
+    grid-column: 1/ span 3;
+}
+
+.item-span-row{
+    background-color: chocolate;
+    grid-row: 2/ span 2;
 }
 
 @media(max-width:760px){
