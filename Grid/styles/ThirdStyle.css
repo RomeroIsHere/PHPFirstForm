@@ -14,9 +14,9 @@ h2{
 
 .grid-item{
     padding: 20px;
-    background-color: #007bFF;
+    background-color: #bedeff;
     display: flex;
-    color: aliceblue;
+    color: #1e1f20;
     border: 1px solid #999999;
     border-radius: 5px;
     justify-content: center;
@@ -31,47 +31,40 @@ button.grid-item{
     height: 100%;
     cursor: pointer;
 }
+
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4, 100px);
-    
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px auto 50px;
     gap: 10px;
-
     margin: 0 auto;
-}
-
-.item-span-col{
-    background-color: #316300;
-    grid-column: 1/ span 3;
-}
-
-.item-span-row{
-    background-color: chocolate;
-    grid-row: 2/ span 2;
+    max-width: 900px;
+    height: 1000px;
 }
 
 .flex-container{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:center;
 }
 
-@media(max-width:760px){
-    .grid-container{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
+.head{
+    background-color: tomato;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
-
-@media(max-width:480px){
-    .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap:5px;
-    }
-    .oculta{
-    display: none;
-    }
+.side{
+    background-color: #fff3b1;
+    grid-column: 3/4;
+    grid-row: 2;
+}
+.main{
+    background-color: #b1ffe8;
+    grid-column: 1/3 ;
+    grid-row: 2;
+}
+.foot{
+    background-color: #f8b1ff;
+    grid-column:1/4;
 }
