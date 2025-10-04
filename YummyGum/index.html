@@ -6,6 +6,11 @@
     <title>Copia de Yummy gum</title>
     <link rel="shortcut icon" href="resources/Logo.png" type="image/x-icon">
     <link href="./styles/style.css" rel="stylesheet" >
+    <!-- Codigo para Utilizar fuentes alternas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Utiliza Instrument Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,7 +28,7 @@
             </button>
         </div>
     </header>
-    <section>
+    <section class="left">
         <p>
             We're just one click away to help you take your brand or product from great to incredible. Fill in the form to share more details about your project. Or your favourite gum flavour. Either way, we'd love to talk.
         </p>
@@ -42,27 +47,38 @@
         </section>
     </section>
     <div class="vertical-line"></div>
-    <form action="" method="post">
-        <fieldset>
-            <label for="First">First name:</label>
-            <br>
-            <input type="text" name="First" id="First">
-            <br>
-            <label for="Last">Last name:</label>
-            <br>
-            <input type="text" name="Last" id="Last">
-            <br>
-            <label for="Email">Email address:</label>
-            <br>
-            <input type="text" name="Email" id="Email">
-            <br>
-            <label for="Idea">Tell us more about your project goals:</label>
-            <br>
-            <input type="text" name="Idea" id="Idea">
-            <button type="submit">
-                Send
-                <img src="resources/SendArrow.png" alt="Flecha de envio">
-            </button>
+    <form action="" method="post" class="right">
+        <fieldset class="border-none">
+            <div>
+                <label for="First">First name:</label>
+                <br>
+                <input type="text" name="First" id="First" required>
+                <br>
+            </div>
+            <div>
+                <label for="Last">Last name:</label>
+                <br>
+                <input type="text" name="Last" id="Last" required>
+                <br>
+            </div>
+            <div class="grid-full-row">
+                <label for="Email">Email address:</label>
+                <br>
+                <input type="text" name="Email" id="Email" required>
+                <br>
+            </div>
+            <div class="grid-full-row">
+                <label for="Idea">Tell us more about your project goals:</label>
+                <br>
+                <input type="text" name="Idea" id="Idea" required>
+                <br>
+            </div>
+            <div>
+                <button type="submit">
+                    Send
+                    <img src="resources/SendArrow.png" alt="Flecha de envio">
+                </button>
+            </div>
         </fieldset>
     </form>
 </body>
