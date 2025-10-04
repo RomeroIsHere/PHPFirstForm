@@ -13,77 +13,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div>
+    <nav class="top-of-page">
+        <div class="contact-area">
             <img src="resources/Logo.png" alt="Logo de La compañia"> 
             <h1>Nombre de Compañia</h1>
         </div>
-        <div>
-            <button>
+        <div class="contact-area">
+            <button class="button black">
                 Nuevo Proyecto
             </button>
-            <button>
+            <button class="button white">
                 <img src="resources/FriesMenu.png" alt="Simbolo de Menu">
                 Menu
             </button>
         </div>
-    </header>
-    <section class="left">
-        <p>
-            We're just one click away to help you take your brand or product from great to incredible. Fill in the form to share more details about your project. Or your favourite gum flavour. Either way, we'd love to talk.
-        </p>
-        <section>
-            <img src="resources/PFP.png" alt="Imagen de Perfil">
-            <h2>
-                Hi I'm Vince! Let's talk about your amazing ideas and projects .
-            </h2>
-            <p>
-                “I enjoy translating your thoughts to our diversely skilled team for the best results”
+    </nav>
+    <article class="main-layout-grid">
+        <header class="titular">
+            <h1>
+                Let's blow 
+                <br>
+                (speech) bubbles
+            </h1>
+        </header>
+        <section class="left">
+            <p class="flavour-text">
+                We're just one click away to help you take your brand or product from great to incredible. Fill in the form to share more details about your project. Or your favourite gum flavour. Either way, we'd love to talk.
             </p>
-            <a href="mailto:vincent@example.com">
-                <img src="resources/mail.png" alt="Simbolo de correo Electronico">
-                Email Vince directly
-            </a>
+            <section>
+                <img src="resources/PFP.png" alt="Imagen de Perfil">
+                <h2>
+                    Hi I'm Vince! Let's talk about your amazing ideas and projects .
+                </h2>
+                <p>
+                    “I enjoy translating your thoughts to our diversely skilled team for the best results”
+                </p>
+                <a href="mailto:vincent@example.com" class="contact-area">
+                    <img src="resources/mail.png" alt="Simbolo de correo Electronico">
+                    Email Vince directly
+                </a>
+            </section>
         </section>
-    </section>
-    <div class="vertical-line"></div>
-    <form action="" method="post" class="right">
-        <fieldset class="border-none">
-            <div>
-                <label for="First">First name:</label>
-                <br>
-                <input type="text" name="First" id="First" required>
-                <br>
+        <div class="vertical-line"></div>
+        <form action="" method="post" class="right">
+            <div class="name-input">
+                <div>
+                    <label for="First">First name:</label>
+                    <br>
+                    <input type="text" class="custom-text-input" name="First" id="First" placeholder="Your first name." required>
+                    <br>
+                </div>
+                <div>
+                    <label for="Last">Last name:</label>
+                    <br>
+                    <input type="text" class="custom-text-input" name="Last" id="Last" placeholder="Your last name." required>
+                    <br>
+                </div>
             </div>
             <div>
-                <label for="Last">Last name:</label>
-                <br>
-                <input type="text" name="Last" id="Last" required>
-                <br>
-            </div>
-            <div class="grid-full-row">
                 <label for="Email">Email address:</label>
                 <br>
-                <input type="text" name="Email" id="Email" required>
+                <input type="email" class="custom-text-input" name="Email" id="Email" placeholder="Your email address." required>
                 <br>
             </div>
-            <div class="grid-full-row">
+            <div>
                 <label for="Idea">Tell us more about your project goals:</label>
                 <br>
-                <div contentEditable="true">
-                    
-                </div>
+                <textarea name="Idea" class="custom-text-input" id="Idea" required></textarea>
                 
                 
                 <br>
             </div>
             <div>
-                <button type="submit">
+                <button type="submit" class="button black">
                     Send
                     <img src="resources/SendArrow.png" alt="Flecha de envio">
                 </button>
             </div>
-        </fieldset>
-    </form>
+        </form>
+    </article>
 </body>
 </html>

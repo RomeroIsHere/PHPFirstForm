@@ -1,56 +1,126 @@
 * {
     box-sizing: border-box;
+    color: #000000;
 }
 body{
     /* Usa Instrument Sans, O Alternativamente Tahoma, Verdana o cualquier sans-serif, con ese orden en caso de falla*/
     font-family: "Instrument Sans", Tahoma, Verdana, sans-serif;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1px 1fr;
+    padding: 30px 64px;
 }
 
-header{
-    grid-column: 1/4;
-    
+.top-of-page{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-header *{
-    display: inline;
+    flex-direction: row;
 }
 
 img{
-    width: 20px;
+    width: 25px;
 }
 
+.main-layout-grid{
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin: 0px 30px;/*140-94=76*/
+}
+
+.titular{
+    font-size:3.5em;
+    grid-column: 1/ span 3;
+    grid-row: 1/4;
+    margin: 0px;
+}
+
+.titular h1{
+    margin: 0px;
+}
 .left{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.vertical-line{
+    border-left: 1px solid #000000;
+    /* This will need to be updated when switching to Vertical alignment */
 }
 
 .right{
-    
+    max-width: 100%;
+    justify-self: center;
+    align-self: flex-start;
 }
+
+.flavour-text{
+    font-family: "Instrument Sans";
+    font-size: 3.2em;
+    margin-top: 0;
+       padding-right:100px;
+}
+
+.contact-area{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+}
+
+
 
 .border-none{
     border: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
-.grid-full-row{
-    grid-column: 1/span 9;
+.input-grid{
+    display: flex;
+    gap: 20px;
+    flex-flow: column wrap;
 }
 
-input{
+.name-input{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.custom-text-input{
     width: 100%;
+    max-width: 800px;
+    height: 5ch;
+    border-radius: 20px;
+    border: 2px solid #efefef;
+    padding-right: 25px;
+    background: url("./resources/Asterisk.png") no-repeat right;
+    background-size: 20px;
+    font-size: 2ch;
 }
 
-input:required{
-    padding-right: 25px;
-    background: url("../resources/Asterisk.png") no-repeat right;
-    background-size: 20px;
+.button{
+    width: 150px;
+    height: 45px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.black{
+    background-color: #000000;
+    color: #fffFFF;
+}
+
+.white{
+    background-color: #fffFFF;
+    color: #000000;
+}
+
+@media (max-width:800px) {
+    body{
+        background-color: aqua;
+    }
 }
