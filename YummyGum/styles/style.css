@@ -26,17 +26,23 @@ img{
     gap: 10px;
 }
 
-.main-layout-grid{
+/* .main-layout-grid{
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
-    grid-template-rows: 1fr 2fr;
-    margin: 0px 30px;/*140-94=76*/
+    grid-template-rows: auto;
+    margin: 0px 30px;
+} */
+
+.lower-flex{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
 }
 
 .titular{
     font-size:3.5em;
-    grid-column: 1/ span 3;
-    grid-row: 1/4;
+    grid-column: 1/4;
+    grid-row: 1/2;
     margin: 0px;
 }
 
@@ -51,16 +57,18 @@ img{
 
 .flavour-text{
     font-family: "Instrument Sans";
-    font-size: 3.2em;
+    font-size: 3vw;
     margin-top: 0;
-       padding-right:100px;
+    padding-right:100px;
+    max-width: 30ch;
 }
 
 .vertical-line{
+    min-width: 1px;
+    min-height: 1px;
     border-left: 1px solid #000000;
     /* This will need to be updated when switching to Vertical alignment */
 }
-
 .right{
     display: flex;
     max-width: 100%;
@@ -68,6 +76,7 @@ img{
     align-self: flex-start;
     flex-flow: column nowrap;
     gap: 10px;
+    margin-left: 30px;
 }
 
 .border-none{ 
@@ -83,7 +92,7 @@ img{
 
 .name-input{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     gap: 10px;
 }
@@ -128,6 +137,40 @@ img{
 
 @media (max-width:800px) {
     body{
-        background-color: aqua;
+        padding: 30px;
     }
+    .top-of-page{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .main-layout-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1px 1fr;
+        margin: 0px;
+    } */
+    .lower-flex{
+        flex-flow: column;
+    }
+    .titular{
+        font-size: 9vw;
+    }
+    .flavour-text{
+    font-size: 2em;
+    }
+    /* .right{
+        background-color: #000000;
+    } */
+    .name-input{
+        flex-flow: row wrap;
+    }
+    .name-input div{
+        width: 100%;
+    }
+    .vertical-line{
+        min-height: 3px;
+        margin: 45px 0px;
+        background-color: #000000;
+    }
+
 }
