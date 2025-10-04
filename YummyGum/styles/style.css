@@ -19,6 +19,13 @@ img{
     width: 25px;
 }
 
+.contact-area{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+}
+
 .main-layout-grid{
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
@@ -42,17 +49,6 @@ img{
     justify-content: space-evenly;
 }
 
-.vertical-line{
-    border-left: 1px solid #000000;
-    /* This will need to be updated when switching to Vertical alignment */
-}
-
-.right{
-    max-width: 100%;
-    justify-self: center;
-    align-self: flex-start;
-}
-
 .flavour-text{
     font-family: "Instrument Sans";
     font-size: 3.2em;
@@ -60,16 +56,22 @@ img{
        padding-right:100px;
 }
 
-.contact-area{
+.vertical-line{
+    border-left: 1px solid #000000;
+    /* This will need to be updated when switching to Vertical alignment */
+}
+
+.right{
     display: flex;
-    text-decoration: none;
-    align-items: center;
+    max-width: 100%;
+    justify-self: center;
+    align-self: flex-start;
+    flex-flow: column nowrap;
     gap: 10px;
 }
 
-
-
-.border-none{
+.border-none{ 
+    /* This one is no longer needed */
     border: none;
 }
 
@@ -90,12 +92,17 @@ img{
     width: 100%;
     max-width: 800px;
     height: 5ch;
-    border-radius: 20px;
+    border-radius: 5ch;
     border: 2px solid #efefef;
     padding-right: 25px;
+    padding-left: 10px;
     background: url("./resources/Asterisk.png") no-repeat right;
     background-size: 20px;
     font-size: 2ch;
+}
+
+.custom-text-input::placeholder{
+    color: rgba(0, 0, 0, 0.30);
 }
 
 .button{
