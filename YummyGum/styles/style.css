@@ -1,29 +1,29 @@
 * {
-    box-sizing: border-box;
-    color: #000000;
+  box-sizing: border-box;
+  color: #000000;
 }
-body{
-    /* Usa Instrument Sans, O Alternativamente Tahoma, Verdana o cualquier sans-serif, con ese orden en caso de falla*/
-    font-family: "Instrument Sans", Tahoma, Verdana, sans-serif;
-    padding: 30px 64px;
-}
-
-.top-of-page{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
+body {
+  /* Usa Instrument Sans, O Alternativamente Tahoma, Verdana o cualquier sans-serif, con ese orden en caso de falla*/
+  font-family: "Instrument Sans", Tahoma, Verdana, sans-serif;
+  padding: 30px 64px;
 }
 
-img{
-    width: 25px;
+.top-of-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-.contact-area{
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    gap: 10px;
+img {
+  width: 25px;
+}
+
+.contact-area {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 10px;
 }
 
 /* .main-layout-grid{
@@ -33,144 +33,143 @@ img{
     margin: 0px 30px;
 } */
 
-.lower-flex{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+.lower-flex {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
-.titular{
-    font-size:3.5em;
-    grid-column: 1/4;
-    grid-row: 1/2;
-    margin: 0px;
+.titular {
+  font-size: 3.5em;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  margin: 0px;
 }
 
-.titular h1{
-    margin: 0px;
+.titular h1 {
+  margin: 0px;
 }
-.left{
-    display: flex;
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.flavour-text {
+  font-family: "Instrument Sans";
+  font-size: 3vw;
+  margin-top: 0;
+  padding-right: 100px;
+  max-width: 30ch;
+}
+
+.vertical-line {
+  min-width: 1px;
+  min-height: 1px;
+  border-left: 1px solid #000000;
+  /* This will need to be updated when switching to Vertical alignment */
+}
+.right {
+  display: flex;
+  max-width: 100%;
+  justify-self: center;
+  align-self: flex-start;
+  flex-flow: column nowrap;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.border-none {
+  /* This one is no longer needed */
+  border: none;
+}
+
+.input-grid {
+  display: flex;
+  gap: 20px;
+  flex-flow: column wrap;
+}
+
+.name-input {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.custom-text-input {
+  width: 100%;
+  max-width: 800px;
+  height: 5ch;
+  border-radius: 5ch;
+  border: 2px solid #efefef;
+  padding-right: 25px;
+  padding-left: 10px;
+  background: url("./resources/Asterisk.png") no-repeat right;
+  background-size: 20px;
+  font-size: 2ch;
+}
+
+.custom-text-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  width: 150px;
+  height: 45px;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 30px;
+  }
+  .top-of-page {
     flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.flavour-text{
-    font-family: "Instrument Sans";
-    font-size: 3vw;
-    margin-top: 0;
-    padding-right:100px;
-    max-width: 30ch;
-}
-
-.vertical-line{
-    min-width: 1px;
-    min-height: 1px;
-    border-left: 1px solid #000000;
-    /* This will need to be updated when switching to Vertical alignment */
-}
-.right{
-    display: flex;
-    max-width: 100%;
-    justify-self: center;
-    align-self: flex-start;
-    flex-flow: column nowrap;
-    gap: 10px;
-    margin-left: 30px;
-}
-
-.border-none{ 
-    /* This one is no longer needed */
-    border: none;
-}
-
-.input-grid{
-    display: flex;
-    gap: 20px;
-    flex-flow: column wrap;
-}
-
-.name-input{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.custom-text-input{
-    width: 100%;
-    max-width: 800px;
-    height: 5ch;
-    border-radius: 5ch;
-    border: 2px solid #efefef;
-    padding-right: 25px;
-    padding-left: 10px;
-    background: url("./resources/Asterisk.png") no-repeat right;
-    background-size: 20px;
-    font-size: 2ch;
-}
-
-.custom-text-input::placeholder{
-    color: rgba(0, 0, 0, 0.30);
-}
-
-.button{
-    width: 150px;
-    height: 45px;
-    border: 1px solid #000000;
-    border-radius: 25px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
+  }
 
-.black{
-    background-color: #000000;
-    color: #fffFFF;
-}
-
-.white{
-    background-color: #fffFFF;
-    color: #000000;
-}
-
-@media (max-width:800px) {
-    body{
-        padding: 30px;
-    }
-    .top-of-page{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* .main-layout-grid{
+  /* .main-layout-grid{
         grid-template-columns: 1fr;
         grid-template-rows: 100px 1fr 1px 1fr;
         margin: 0px;
     } */
-    .lower-flex{
-        flex-flow: column;
-    }
-    .titular{
-        font-size: 9vw;
-    }
-    .flavour-text{
+  .lower-flex {
+    flex-flow: column;
+  }
+  .titular {
+    font-size: 9vw;
+  }
+  .flavour-text {
     font-size: 2em;
-    }
-    /* .right{
+  }
+  /* .right{
         background-color: #000000;
     } */
-    .name-input{
-        flex-flow: row wrap;
-    }
-    .name-input div{
-        width: 100%;
-    }
-    .vertical-line{
-        min-height: 3px;
-        margin: 45px 0px;
-        background-color: #000000;
-    }
-
+  .name-input {
+    flex-flow: row wrap;
+  }
+  .name-input div {
+    width: 100%;
+  }
+  .vertical-line {
+    min-height: 3px;
+    margin: 45px 0px;
+    background-color: #000000;
+  }
 }
