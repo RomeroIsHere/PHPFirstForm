@@ -1,0 +1,52 @@
+.fixed{
+position: fixed;
+}
+.fixed-top{
+top: 0px;
+}
+.flex{
+display: flex;
+flex-wrap: wrap;
+}
+.flex-row{
+flex-direction: row;
+}
+.flex-between{
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.nav-bar{
+    width: 100%;
+    margin: 0px;
+    padding: 20px 30px;
+    background-color: #dfe7e5;
+}
+
+.button-bar{
+    gap:20px;
+    margin-right: 40px;
+}
+.nav-button{
+    background-color: #ffffff;
+    border: 2px solid #3e6358;
+    min-width: 20vh;
+    min-height: 5vb;
+    border-radius: 30px;
+    box-shadow: inset -0em -1em 1em #afddcf, inset 0em 1em 1em #ffffff;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+}
+
+.nav-button:hover{
+    box-shadow:none;
+    cursor: pointer;
+}
+
+.nav-button:active{
+    box-shadow:inset -0em -1em 1em #e5f3ef, inset 0em 1em 1em #353636;
+}
