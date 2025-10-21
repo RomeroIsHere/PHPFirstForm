@@ -1,32 +1,25 @@
 @import "tailwindcss";
 
-
-
-.customShadow{
- box-shadow: inset 5px 5px 10px #ffffff8e, inset -5px -5px 10px #0000008e;
+.customShadow {
+    box-shadow:
+        inset 5px 5px 10px #ffffff8e,
+        inset -5px -5px 10px #0000008e;
 }
 
-.customShadow:hover{
+.customShadow:hover {
     box-shadow: 0px 0px 10px 5px #ffffff;
 }
 
-
-.ImageHighlight:hover{
+.ImageHighlight:hover {
     box-shadow: 0px 0px 10px 5px #000000;
-    filter: brightness(0.4)
+    filter: brightness(0.4);
 }
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @theme {
-    --color-avocado-100: oklch(0.99 0 0);
-    --color-avocado-200: oklch(0.98 0.04 113.22);
-    --color-avocado-300: oklch(0.94 0.11 115.03);
-    --color-avocado-400: oklch(0.92 0.19 114.08);
-    --color-avocado-500: oklch(0.84 0.18 117.33);
-    --color-avocado-600: oklch(0.53 0.12 118.34);
-    
+    --color-primary: #dbfffd;
+    --color-secondary: #30b2a5;
+    --color-accent: #ff0c00;
 }
-
