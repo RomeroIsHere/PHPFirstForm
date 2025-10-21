@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Space Shooting Star Burgers</title>
+        <link href="./style/output.css" rel="stylesheet" />
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    </head>
+    <body class="bg-secondary">
+        <div id="sidebar-multi-level-sidebar" class="fixed hidden h-screen w-screen bg-primary/70 z-45" onclick="closeSideBar()">
+            <aside
+                
+                class="fixed top-0 left-0 z-50 h-screen transition-transform"
+                aria-label="Sidebar"
+                onclick="toggleSideBar()"
+            >
+                <div class="h-full px-3 py-4 overflow-y-auto bg-primary">
+                    <ul class="space-y-2 font-medium">
+                        <li>
+                            <a
+                                href="Index.html"
+                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group"
+                            >
+                                <span class="ms-3">
+                                    Inicio
+                                </span>
+                            </a>
+                        </li>                        <li>
+                            <a
+                                href="Platillos.html"
+                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group"
+                            >
+                                <span class="ms-3">
+                                    Platillos
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="Especialidades.html"
+                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group"
+                            >
+                                <span class="ms-3">
+                                    Especialidades
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="Contacto.html"
+                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group"
+                            >
+                                <span class="ms-3">
+                                    Contactanos
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <nav
+            class="h-25 px-10 bg-secondary flex flex-row justify-between text-black"
+        >
+            <div class="flex flex-row justify-start items-center">
+                <img
+                    src="resources/Logo.svg"
+                    alt="Logo de Nightshade"
+                    class="h-1/2"
+                />
+                <span class=""> Space Shooting Star Burgers </span>
+            </div>
+
+            <button
+                data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar"
+                class="flex flex-row justify-end items-center"
+                type="button"
+                onclick="toggleSideBar()"
+            >
+                <span class="sr-only">Open sidebar</span>
+                <img
+                    src="resources/Fries.svg"
+                    alt="Fries Menu"
+                    class="max-h-1/2"
+                />
+            </button>
+        </nav>
+        <section>
+
+        </section>
+       <script src="scripts/Sidebar.js"></script>
+    </body>
+</html>
