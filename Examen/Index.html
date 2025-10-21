@@ -8,9 +8,12 @@
         <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     </head>
     <body class="bg-secondary">
-        <div id="sidebar-multi-level-sidebar" class="fixed hidden h-screen w-screen bg-primary/70 z-45" onclick="closeSideBar()">
+        <div
+            id="sidebar-multi-level-sidebar"
+            class="fixed hidden h-screen w-screen bg-primary/70 z-45"
+            onclick="closeSideBar()"
+        >
             <aside
-                
                 class="fixed top-0 left-0 z-50 h-screen transition-transform"
                 aria-label="Sidebar"
                 onclick="toggleSideBar()"
@@ -22,18 +25,15 @@
                                 href="Index.html"
                                 class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group"
                             >
-                                <span class="ms-3">
-                                    Inicio
-                                </span>
+                                <span class="ms-3"> Inicio </span>
                             </a>
-                        </li>                        <li>
+                        </li>
+                        <li>
                             <a
                                 href="Platillos.html"
                                 class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group"
                             >
-                                <span class="ms-3">
-                                    Platillos
-                                </span>
+                                <span class="ms-3"> Platillos </span>
                             </a>
                         </li>
                         <li>
@@ -41,9 +41,7 @@
                                 href="Especialidades.html"
                                 class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group"
                             >
-                                <span class="ms-3">
-                                    Especialidades
-                                </span>
+                                <span class="ms-3"> Especialidades </span>
                             </a>
                         </li>
                         <li>
@@ -51,12 +49,9 @@
                                 href="Contacto.html"
                                 class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group"
                             >
-                                <span class="ms-3">
-                                    Contactanos
-                                </span>
+                                <span class="ms-3"> Contactanos </span>
                             </a>
                         </li>
-
                     </ul>
                 </div>
             </aside>
@@ -74,7 +69,9 @@
             </div>
 
             <button
-                data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar"
+                data-drawer-target="sidebar-multi-level-sidebar"
+                data-drawer-toggle="sidebar-multi-level-sidebar"
+                aria-controls="sidebar-multi-level-sidebar"
                 class="flex flex-row justify-end items-center"
                 type="button"
                 onclick="toggleSideBar()"
@@ -87,7 +84,7 @@
                 />
             </button>
         </nav>
-    
+
         <header class="relative inline-block w-full text-center mb-0">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -159,6 +156,6 @@
             </button>
         </div>
 
-       <script src="scripts/Sidebar.js"></script>
+        <script src="scripts/Sidebar.js"></script>
     </body>
 </html>
