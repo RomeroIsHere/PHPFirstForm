@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.customShadow {
+    box-shadow:
+        inset 5px 5px 10px #ffffff8e,
+        inset -5px -5px 10px #0000008e;
+}
+
+.customShadow:hover {
+    box-shadow: 0px 0px 10px 5px #ffffff;
+}
+
+.ImageHighlight:hover {
+    box-shadow: 0px 0px 10px 5px #000000;
+    filter: brightness(0.4);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@theme {
+    --color-primary: #dbfffd;
+    --color-secondary: #30b2a5;
+    --color-accent: #ff0c00;
+}
