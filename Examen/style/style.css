@@ -15,6 +15,12 @@
     filter: brightness(0.4);
 }
 
+input,
+select, 
+textarea {
+    border: 1px solid var(--color-secondary);
+}
+
 @tailwind utilities;
 @theme {
     --color-primary: #dbfffd;
@@ -41,5 +47,4 @@
             transform: scale(1);
         }
     }
-
 }

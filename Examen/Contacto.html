@@ -7,7 +7,7 @@
         <link href="./style/output.css" rel="stylesheet" />
         <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     </head>
-    <body class="bg-secondary">
+    <body class="bg-primary">
         <div
             id="sidebar-multi-level-sidebar"
             class="fixed hidden h-screen w-screen bg-primary/70 z-45"
@@ -84,7 +84,53 @@
                 />
             </button>
         </nav>
-        <section></section>
+        
+
+
+
+        <form class="grid grid-cols-1 md:grid-cols-2"
+        action="#">
+            <div class="flex flex-col items-start justify-between">
+                <label for="tipo"> Nombre </label>
+                <input class="w-full" type="text" name="name" id="name" />
+            </div>
+            <div class="flex flex-col items-start justify-between">
+                <label for="tipo"> Apellido(/s) </label>
+                <input class="w-full" type="text" name="lastName" id="lastName" />
+            </div>
+            <div class="flex flex-col items-start justify-between col-span-full">
+
+                <label for="email">
+                    Correo Electronico<span class="redText">*</span>
+                </label>
+                <input class="w-full"
+                    type="email"
+                    name="email"
+                    placeholder="Escribe tu Correo Electronico Aqui"
+                    id="email"
+                    required
+                />
+            </div>
+            <div class="flex flex-col items-start justify-between col-span-full">
+                <label for="tipo"> Tipo de Comentario </label>
+                <select class="w-full"
+                name="tipo" id="tipo">
+                    <option value="">-- Selecciona una Opción</option>
+                    <option value="Queja">Queja</option>
+                    <option value="Sugerencia">Sugerencia</option>
+                    <option value="Pregunta">Pregunta</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="flex flex-col items-start justify-between col-span-full">
+                <label for="Comentario">Comentario</label>
+                <textarea class="w-full"
+                name="Comentario" id="Comentario"></textarea>
+            </div>
+            <input class="col-span-full"
+            type="submit" value="Submit"/>
+            <br />
+        </form>
         <script src="scripts/Sidebar.js"></script>
     </body>
 </html>
