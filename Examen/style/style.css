@@ -15,11 +15,31 @@
     filter: brightness(0.4);
 }
 
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 @theme {
     --color-primary: #dbfffd;
     --color-secondary: #30b2a5;
     --color-accent: #ff0c00;
+
+    --animate-fade-in-scale: fade-in-scale 1.5s ease-out;
+    --animate-fade-only: fade-only 1.5s ease-out;
+    @keyframes fade-only {
+        0% {
+            opacity: 0.4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fade-in-scale {
+        0% {
+            opacity: 0.4;
+            transform: scale(0.95);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
 }
