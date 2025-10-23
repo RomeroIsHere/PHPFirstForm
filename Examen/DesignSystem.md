@@ -14,14 +14,6 @@ Acento: #ff0c00;
 
 Roboto Mono
 
-# Diseños
+# Diseños En Figma
 
-[Name][Emmbed Image]
-
-Landing Page
-
-Menu Platillos
-
-Menu De Especialidades y Combos
-
-Formulario para hacer una Reserva
+Diseñados y Exportados en un PDF Alterno
