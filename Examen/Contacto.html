@@ -84,53 +84,175 @@
                 />
             </button>
         </nav>
-        
+        <section class="p-20 bg-primary">
+            <div class="border rounded-xl bg-secondary p-4 shadow-8xl">
+                    
+                <div class="TabBar w-full px-4 flex justify-start gap-0 md:gap-5 pt-2">
+                    <button class="Tab rounded-t border border-b-0 bg-primary" onclick="openTab(event, 'Queja')">
+                        Queja
+                    </button>
+                    <button class="Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Sugerencia')">
+                        Sugerencia
+                    </button>
+                    <button class="Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Otros')">
+                        Otros
+                    </button>
+                </div>
 
-
-
-        <form class="grid grid-cols-1 md:grid-cols-2"
-        action="#">
-            <div class="flex flex-col items-start justify-between">
-                <label for="tipo"> Nombre </label>
-                <input class="w-full" type="text" name="name" id="name" />
+                <form
+                    id="Queja"
+                    class="TabContent grid grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
+                    action="#"
+                >
+                    <div class="flex flex-col items-start justify-between">
+                        <label for="tipo"> Nombre </label>
+                        <input class="w-full" type="text" name="name" id="name" />
+                    </div>
+                    <div class="flex flex-col items-start justify-between">
+                        <label for="tipo"> Apellido(/s) </label>
+                        <input
+                            class="w-full"
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                        <label for="email">
+                            Correo Electronico<span class="redText">*</span>
+                        </label>
+                        <input
+                            class="w-full"
+                            type="email"
+                            name="email"
+                            placeholder="Escribe tu Correo Electronico Aqui"
+                            id="email"
+                            required
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                        <label for="Comentario">Queja</label>
+                        <textarea
+                            class="w-full"
+                            name="Comentario"
+                            id="Comentario"
+                        ></textarea>
+                    </div>
+                    <input class="col-span-full" type="submit" value="Enviar" />
+                    <br />
+                </form>
+                <form
+                    id="Sugerencia"
+                    class="TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
+                    action="#"
+                >
+                    <div class="flex flex-col items-start justify-between">
+                        <label for="tipo"> Nombre </label>
+                        <input class="w-full" type="text" name="name" id="name" />
+                    </div>
+                    <div class="flex flex-col items-start justify-between">
+                        <label for="tipo"> Apellido(/s) </label>
+                        <input
+                            class="w-full"
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                        <label for="email">
+                            Correo Electronico<span class="redText">*</span>
+                        </label>
+                        <input
+                            class="w-full"
+                            type="email"
+                            name="email"
+                            placeholder="Escribe tu Correo Electronico Aqui"
+                            id="email"
+                            required
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                        <label for="Comentario">Sugerencia</label>
+                        <textarea
+                            class="w-full"
+                            name="Comentario"
+                            id="Comentario"
+                        >
+                        </textarea>
+                    </div>
+                    <input class="col-span-full" type="submit" value="Enviar" />
+                    <br />
+                </form>
+                <form
+                    id="Otros"
+                    class="TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
+                    action="#"
+                >
+                    <div class="flex flex-col items-start justify-between">
+                        <label for="tipo"> Nombre </label>
+                        <input class="w-full" type="text" name="name" id="name" />
+                    </div>
+                    <div class="flex flex-col items-start justify-between">
+                        <label for="tipo"> Apellido(/s) </label>
+                        <input
+                            class="w-full"
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                        <label for="email">
+                            Correo Electronico<span class="redText">*</span>
+                        </label>
+                        <input
+                            class="w-full"
+                            type="email"
+                            name="email"
+                            placeholder="Escribe tu Correo Electronico Aqui"
+                            id="email"
+                            required
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                        <label for="Comentario">Comentario</label>
+                        <textarea
+                            class="w-full"
+                            name="Comentario"
+                            id="Comentario"
+                        ></textarea>
+                    </div>
+                    <input class="col-span-full" type="submit" value="Enviar" />
+                    <br />
+                </form>
             </div>
-            <div class="flex flex-col items-start justify-between">
-                <label for="tipo"> Apellido(/s) </label>
-                <input class="w-full" type="text" name="lastName" id="lastName" />
-            </div>
-            <div class="flex flex-col items-start justify-between col-span-full">
-
-                <label for="email">
-                    Correo Electronico<span class="redText">*</span>
-                </label>
-                <input class="w-full"
-                    type="email"
-                    name="email"
-                    placeholder="Escribe tu Correo Electronico Aqui"
-                    id="email"
-                    required
-                />
-            </div>
-            <div class="flex flex-col items-start justify-between col-span-full">
-                <label for="tipo"> Tipo de Comentario </label>
-                <select class="w-full"
-                name="tipo" id="tipo">
-                    <option value="">-- Selecciona una Opción</option>
-                    <option value="Queja">Queja</option>
-                    <option value="Sugerencia">Sugerencia</option>
-                    <option value="Pregunta">Pregunta</option>
-                    <option value="Otro">Otro</option>
-                </select>
-            </div>
-            <div class="flex flex-col items-start justify-between col-span-full">
-                <label for="Comentario">Comentario</label>
-                <textarea class="w-full"
-                name="Comentario" id="Comentario"></textarea>
-            </div>
-            <input class="col-span-full"
-            type="submit" value="Submit"/>
-            <br />
-        </form>
+        </section>
         <script src="scripts/Sidebar.js"></script>
+        <script src="scripts/Tabbar.js"></script>
     </body>
 </html>
