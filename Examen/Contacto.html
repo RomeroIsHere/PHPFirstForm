@@ -84,11 +84,14 @@
                 />
             </button>
         </nav>
-        <section class="p-20 bg-primary">
-            <div class="border rounded-xl bg-secondary p-4 shadow-8xl">
-                    
-                <div class="TabBar w-full px-4 flex justify-start gap-0 md:gap-5 pt-2">
-                    <button class="Tab rounded-t border border-b-0 bg-primary" onclick="openTab(event, 'Queja')">
+        <section class="p-10 bg-primary">
+            <div class="border h-full rounded-xl bg-secondary p-4 shadow-8xl">
+                <div class="TabBar w-full px-4 flex flex-wrap justify-start gap-x-2 md:gap-5 pt-2">
+                    <button class="Tab rounded-t border border-b-0 bg-primary" onclick="openTab(event, 'Reservar')">
+                        Reservar
+                    </button>
+                    </button>
+                    <button class="Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Queja')">
                         Queja
                     </button>
                     <button class="Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Sugerencia')">
@@ -98,10 +101,66 @@
                         Otros
                     </button>
                 </div>
-
+                <form
+                    id="Reservar"
+                    class="TabContent grid grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
+                    action="#"
+                >
+                    <div class="flex flex-col items-start justify-between">
+                        <label for="tipo"> Nombre </label>
+                        <input class="w-full" type="text" name="name" id="name" />
+                    </div>
+                    <div class="flex flex-col items-start justify-between">
+                        <label for="tipo"> Apellido(/s) </label>
+                        <input
+                            class="w-full"
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between col-span-full"
+                    >
+                        <label for="email">
+                            Correo Electronico<span class="redText">*</span>
+                        </label>
+                        <input
+                            class="w-full"
+                            type="email"
+                            name="email"
+                            placeholder="Escribe tu Correo Electronico Aqui"
+                            id="email"
+                            required
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between"
+                    >
+                        <label for="Day">
+                            Dia a Reservar
+                        </label>
+                        <input type="date" name="Day" id="day">
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-between"
+                    >
+                        <label for="Time">
+                            Tiempo a Reservar
+                        </label>
+                        <input type="time" name="Time" id="time"
+                            min="13:00"
+                            max="22:00"
+                            value="13:00"
+                            step="00:15"
+                            > <small>Horario De Reservas de 13:00 a 22:00</small>
+                    </div>
+                    <input class="col-span-full" type="submit" value="Enviar" />
+                    <br />
+                </form>
                 <form
                     id="Queja"
-                    class="TabContent grid grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
+                    class="TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
                     action="#"
                 >
                     <div class="flex flex-col items-start justify-between">
@@ -254,5 +313,6 @@
         </section>
         <script src="scripts/Sidebar.js"></script>
         <script src="scripts/Tabbar.js"></script>
+        <script src="scripts/DateConstraint.js"></script>
     </body>
 </html>
