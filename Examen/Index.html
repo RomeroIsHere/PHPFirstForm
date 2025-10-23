@@ -7,49 +7,49 @@
         <link href="./style/output.css" rel="stylesheet" />
         <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     </head>
-    <body class="bg-secondary">
+    <body class="font-roboto bg-secondary">
         <div
             id="sidebar-multi-level-sidebar"
-            class="fixed hidden h-screen w-screen bg-primary/70 z-45"
+            class="font-roboto fixed hidden h-screen w-screen bg-primary/70 z-45"
             onclick="closeSideBar()"
         >
             <aside
-                class="fixed top-0 left-0 z-50 h-screen transition-transform"
+                class="font-roboto fixed top-0 left-0 z-50 h-screen transition-transform"
                 aria-label="Sidebar"
                 onclick="toggleSideBar()"
             >
-                <div class="h-full px-3 py-4 overflow-y-auto bg-primary">
-                    <ul class="space-y-2 font-medium">
+                <div class="font-roboto h-full px-3 py-4 overflow-y-auto bg-primary">
+                    <ul class="font-roboto space-y-2 font-medium">
                         <li>
                             <a
                                 href="Index.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Inicio </span>
+                                <span class="font-roboto ms-3"> Inicio </span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="Platillos.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Platillos </span>
+                                <span class="font-roboto ms-3"> Platillos </span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="Especialidades.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Especialidades </span>
+                                <span class="font-roboto ms-3"> Especialidades </span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="Contacto.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Contactanos </span>
+                                <span class="font-roboto ms-3"> Contactanos </span>
                             </a>
                         </li>
                     </ul>
@@ -57,40 +57,40 @@
             </aside>
         </div>
         <nav
-            class="h-25 px-10 bg-secondary flex flex-row justify-between text-black"
+            class="font-roboto h-25 px-10 bg-secondary flex flex-row justify-between text-black"
         >
-            <a href="./Index.html" class="flex flex-row justify-start items-center">
+            <a href="./Index.html" class="font-roboto flex flex-row justify-start items-center">
             
                 <img
                     src="resources/Logo.svg"
                     alt="Logo de Nightshade"
-                    class="h-1/2"
+                    class="font-roboto h-1/2"
                 />
-                <span class=""> Space Shooting Star Burgers </span>
+                <span class="font-roboto "> Space Shooting Star Burgers </span>
             </a>
 
             <button
                 data-drawer-target="sidebar-multi-level-sidebar"
                 data-drawer-toggle="sidebar-multi-level-sidebar"
                 aria-controls="sidebar-multi-level-sidebar"
-                class="flex flex-row justify-end items-center"
+                class="font-roboto flex flex-row justify-end items-center"
                 type="button"
                 onclick="toggleSideBar()"
             >
-                <span class="sr-only">Open sidebar</span>
+                <span class="font-roboto sr-only">Open sidebar</span>
                 <img
                     src="resources/Fries.svg"
                     alt="Fries Menu"
-                    class="max-h-1/2"
+                    class="font-roboto max-h-1/2"
                 />
             </button>
         </nav>
 
-        <header class="relative inline-block w-full text-center mb-0">
+        <header class="font-roboto relative inline-block w-full text-center mb-0">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1440 320"
-                class="absolute z-40"
+                class="font-roboto absolute z-40"
             >
                 <path
                     fill="#30b2a5"
@@ -101,10 +101,10 @@
             <img
                 src="resources/header.webp"
                 alt="Imagen de El Interior del Restaurante"
-                class="brightness-[0.3] w-full"
+                class="font-roboto brightness-[0.3] w-full"
             />
-            <div class="absolute top-1/2 right-1/2 text-white">
-                <p class="text-[5vw]">
+            <div class="font-roboto absolute top-1/2 right-1/2 text-white">
+                <p class="font-roboto text-[5vw]">
                     Ven a Comer a
                     <br />
                     Space Shooting Star Burgers
@@ -113,17 +113,17 @@
         </header>
 
         <div
-            class="mt-10 py-10 lg:py-3 mx-5 bg-primary flex flex-col flex-wrap justify-around items-center gap-10 lg:gap-0"
+            class="font-roboto mt-10 py-10 lg:py-3 mx-5 bg-primary flex flex-col flex-wrap justify-around items-center gap-10 lg:gap-0"
         >
             <div
-                class="flex flex-col lg:flex-row gap-10 justify-between items-center"
+                class="font-roboto flex flex-col lg:flex-row gap-10 justify-between items-center"
             >
                 <div
-                    class="w-full lg:size-[50%] flex justify-center items-center"
+                    class="font-roboto w-full lg:size-[50%] flex justify-center items-center"
                 >
-                <a href="./Platillos.html" class="w-full flex justify-center items-center">
+                <a href="./Platillos.html" class="font-roboto w-full flex justify-center items-center">
                     <button
-                        class="h-10 w-[80%] lg:size-100 bg-secondary text-black rounded-xl lg:text-8xl customShadow transition-all duration-300 ease-in-out"
+                        class="font-roboto h-10 w-[80%] lg:size-100 bg-secondary text-black rounded-xl lg:text-8xl customShadow transition-all duration-300 ease-in-out"
                     >
                         Platillos
                     </button>
@@ -132,32 +132,32 @@
                 <img
                     src="resources/Burger.jpeg"
                     alt="Hamburgesa en un Plato con Papas y Catsup"
-                    class="ImageHighlight lg:max-w-[50%] transition-all duration-300 ease-in-out"
+                    class="font-roboto ImageHighlight lg:max-w-[50%] transition-all duration-300 ease-in-out"
                 />
             </div>
             <div
-                class="flex flex-col-reverse gap-10 lg:flex-row justify-between items-center"
+                class="font-roboto flex flex-col-reverse gap-10 lg:flex-row justify-between items-center"
             >
                 <img
                     src="resources/Burger.jpeg"
                     alt="Hamburgesa en un Plato con Papas y Catsup"
-                    class="ImageHighlight lg:max-w-[50%] transition-all duration-300 ease-in-out"
+                    class="font-roboto ImageHighlight lg:max-w-[50%] transition-all duration-300 ease-in-out"
                 />
                 <div
-                    class="w-full lg:size-[50%] flex justify-center items-center self-center"
+                    class="font-roboto w-full lg:size-[50%] flex justify-center items-center self-center"
                 >
-                <a href="./Especialidades.html" class="w-full flex justify-center items-center">
+                <a href="./Especialidades.html" class="font-roboto w-full flex justify-center items-center">
                     <button
-                        class="h-10 w-[80%] lg:size-100 bg-accent text-black rounded-xl lg:text-6xl customShadow transition-all duration-300 ease-in-out"
+                        class="font-roboto h-10 w-[80%] lg:size-100 bg-accent text-black rounded-xl lg:text-6xl customShadow transition-all duration-300 ease-in-out"
                     >
                         Especialidades
                     </button>
                 </a>
                 </div>
             </div>
-            <a href="./Contacto.html" class="w-full flex justify-center items-center">
+            <a href="./Contacto.html" class="font-roboto w-full flex justify-center items-center">
                 <button
-                class="h-10 w-[80%] lg:m-10 bg-secondary text-black rounded-xl customShadow transition-all duration-300 ease-in-out"
+                class="font-roboto h-10 w-[80%] lg:m-10 bg-secondary text-black rounded-xl customShadow transition-all duration-300 ease-in-out"
                 >
                     Contactanos
                 </button>

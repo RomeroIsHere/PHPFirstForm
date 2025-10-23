@@ -7,49 +7,49 @@
         <link href="./style/output.css" rel="stylesheet" />
         <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     </head>
-    <body class="bg-secondary">
+    <body class="font-roboto bg-secondary">
         <div
             id="sidebar-multi-level-sidebar"
-            class="fixed hidden h-screen w-screen bg-primary/70 z-45"
+            class="font-roboto fixed hidden h-screen w-screen bg-primary/70 z-45"
             onclick="closeSideBar()"
         >
             <aside
-                class="fixed top-0 left-0 z-50 h-screen transition-transform"
+                class="font-roboto fixed top-0 left-0 z-50 h-screen transition-transform"
                 aria-label="Sidebar"
                 onclick="toggleSideBar()"
             >
-                <div class="h-full px-3 py-4 overflow-y-auto bg-primary">
-                    <ul class="space-y-2 font-medium">
+                <div class="font-roboto h-full px-3 py-4 overflow-y-auto bg-primary">
+                    <ul class="font-roboto space-y-2 font-medium">
                         <li>
                             <a
                                 href="Index.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Inicio </span>
+                                <span class="font-roboto ms-3"> Inicio </span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="Platillos.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Platillos </span>
+                                <span class="font-roboto ms-3"> Platillos </span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="Especialidades.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Especialidades </span>
+                                <span class="font-roboto ms-3"> Especialidades </span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="Contacto.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Contactanos </span>
+                                <span class="font-roboto ms-3"> Contactanos </span>
                             </a>
                         </li>
                     </ul>
@@ -57,31 +57,31 @@
             </aside>
         </div>
         <nav
-            class="h-25 px-10 bg-secondary flex flex-row justify-between text-black"
+            class="font-roboto h-25 px-10 bg-secondary flex flex-row justify-between text-black"
         >
-            <a href="./Index.html" class="flex flex-row justify-start items-center">
+            <a href="./Index.html" class="font-roboto flex flex-row justify-start items-center">
             
                 <img
                     src="resources/Logo.svg"
                     alt="Logo de Nightshade"
-                    class="h-1/2"
+                    class="font-roboto h-1/2"
                 />
-                <span class=""> Space Shooting Star Burgers </span>
+                <span class="font-roboto "> Space Shooting Star Burgers </span>
             </a>
 
             <button
                 data-drawer-target="sidebar-multi-level-sidebar"
                 data-drawer-toggle="sidebar-multi-level-sidebar"
                 aria-controls="sidebar-multi-level-sidebar"
-                class="flex flex-row justify-end items-center"
+                class="font-roboto flex flex-row justify-end items-center"
                 type="button"
                 onclick="toggleSideBar()"
             >
-                <span class="sr-only">Open sidebar</span>
+                <span class="font-roboto sr-only">Open sidebar</span>
                 <img
                     src="resources/Fries.svg"
                     alt="Fries Menu"
-                    class="max-h-1/2"
+                    class="font-roboto max-h-1/2"
                 />
             </button>
         </nav>

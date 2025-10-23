@@ -7,49 +7,49 @@
         <link href="./style/output.css" rel="stylesheet" />
         <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     </head>
-    <body class="bg-primary">
+    <body class="font-roboto bg-primary">
         <div
             id="sidebar-multi-level-sidebar"
-            class="fixed hidden h-screen w-screen bg-primary/70 z-45"
+            class="font-roboto fixed hidden h-screen w-screen bg-primary/70 z-45"
             onclick="closeSideBar()"
         >
             <aside
-                class="fixed top-0 left-0 z-50 h-screen transition-transform"
+                class="font-roboto fixed top-0 left-0 z-50 h-screen transition-transform"
                 aria-label="Sidebar"
                 onclick="toggleSideBar()"
             >
-                <div class="h-full px-3 py-4 overflow-y-auto bg-primary">
-                    <ul class="space-y-2 font-medium">
+                <div class="font-roboto h-full px-3 py-4 overflow-y-auto bg-primary">
+                    <ul class="font-roboto space-y-2 font-medium">
                         <li>
                             <a
                                 href="Index.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Inicio </span>
+                                <span class="font-roboto ms-3"> Inicio </span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="Platillos.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Platillos </span>
+                                <span class="font-roboto ms-3"> Platillos </span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="Especialidades.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Especialidades </span>
+                                <span class="font-roboto ms-3"> Especialidades </span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="Contacto.html"
-                                class="flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
+                                class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="ms-3"> Contactanos </span>
+                                <span class="font-roboto ms-3"> Contactanos </span>
                             </a>
                         </li>
                     </ul>
@@ -57,77 +57,77 @@
             </aside>
         </div>
         <nav
-            class="h-25 px-10 bg-secondary flex flex-row justify-between text-black"
+            class="font-roboto h-25 px-10 bg-secondary flex flex-row justify-between text-black"
         >
-            <a href="./Index.html" class="flex flex-row justify-start items-center">
+            <a href="./Index.html" class="font-roboto flex flex-row justify-start items-center">
             
                 <img
                     src="resources/Logo.svg"
                     alt="Logo de Nightshade"
-                    class="h-1/2"
+                    class="font-roboto h-1/2"
                 />
-                <span class=""> Space Shooting Star Burgers </span>
+                <span class="font-roboto "> Space Shooting Star Burgers </span>
             </a>
 
             <button
                 data-drawer-target="sidebar-multi-level-sidebar"
                 data-drawer-toggle="sidebar-multi-level-sidebar"
                 aria-controls="sidebar-multi-level-sidebar"
-                class="flex flex-row justify-end items-center"
+                class="font-roboto flex flex-row justify-end items-center"
                 type="button"
                 onclick="toggleSideBar()"
             >
-                <span class="sr-only">Open sidebar</span>
+                <span class="font-roboto sr-only">Open sidebar</span>
                 <img
                     src="resources/Fries.svg"
                     alt="Fries Menu"
-                    class="max-h-1/2"
+                    class="font-roboto max-h-1/2"
                 />
             </button>
         </nav>
-        <section class="p-10 bg-primary">
-            <div class="border h-full rounded-xl bg-secondary p-4 shadow-8xl">
-                <div class="TabBar w-full px-4 flex flex-wrap justify-start gap-x-2 md:gap-5 pt-2">
-                    <button class="Tab rounded-t border border-b-0 bg-primary" onclick="openTab(event, 'Reservar')">
+        <section class="font-roboto p-10 bg-primary">
+            <div class="font-roboto border h-full rounded-xl bg-secondary p-4 shadow-8xl">
+                <div class="font-roboto TabBar w-full px-4 flex flex-wrap justify-start gap-x-2 md:gap-5 pt-2">
+                    <button class="font-roboto Tab rounded-t border border-b-0 bg-primary" onclick="openTab(event, 'Reservar')">
                         Reservar
                     </button>
                     </button>
-                    <button class="Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Queja')">
+                    <button class="font-roboto Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Queja')">
                         Queja
                     </button>
-                    <button class="Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Sugerencia')">
+                    <button class="font-roboto Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Sugerencia')">
                         Sugerencia
                     </button>
-                    <button class="Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Otros')">
+                    <button class="font-roboto Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Otros')">
                         Otros
                     </button>
                 </div>
                 <form
                     id="Reservar"
-                    class="TabContent grid grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
+                    class="font-roboto TabContent grid grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
                     action="#"
                 >
-                    <div class="flex flex-col items-start justify-between">
+                    <div class="font-roboto flex flex-col items-start justify-between">
                         <label for="tipo"> Nombre </label>
-                        <input class="w-full" type="text" name="name" id="name" />
+                        <input class="font-roboto w-full" type="text" name="name" id="name" />
                     </div>
-                    <div class="flex flex-col items-start justify-between">
+                    <div class="font-roboto flex flex-col items-start justify-between">
                         <label for="tipo"> Apellido(/s) </label>
                         <input
-                            class="w-full"
+                            class="font-roboto w-full"
                             type="text"
                             name="lastName"
                             id="lastName"
                         />
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="email">
-                            Correo Electronico<span class="redText">*</span>
+                            Correo Electronico<span class="font-roboto redText">*</span>
                         </label>
                         <input
-                            class="w-full"
+                            class="font-roboto w-full"
                             type="email"
                             name="email"
                             placeholder="Escribe tu Correo Electronico Aqui"
@@ -136,7 +136,7 @@
                         />
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between"
+                        class="font-roboto flex flex-col items-start justify-between"
                     >
                         <label for="Day">
                             Dia a Reservar
@@ -144,7 +144,7 @@
                         <input type="date" name="Day" id="day">
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between"
+                        class="font-roboto flex flex-col items-start justify-between"
                     >
                         <label for="Time">
                             Tiempo a Reservar
@@ -156,35 +156,35 @@
                             step="00:15"
                             > <small>Horario De Reservas de 13:00 a 22:00</small>
                     </div>
-                    <input class="col-span-full" type="submit" value="Enviar" />
+                    <input class="font-roboto col-span-full" type="submit" value="Enviar" />
                     <br />
                 </form>
                 <form
                     id="Queja"
-                    class="TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
+                    class="font-roboto TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
                     action="#"
                 >
-                    <div class="flex flex-col items-start justify-between">
+                    <div class="font-roboto flex flex-col items-start justify-between">
                         <label for="tipo"> Nombre </label>
-                        <input class="w-full" type="text" name="name" id="name" />
+                        <input class="font-roboto w-full" type="text" name="name" id="name" />
                     </div>
-                    <div class="flex flex-col items-start justify-between">
+                    <div class="font-roboto flex flex-col items-start justify-between">
                         <label for="tipo"> Apellido(/s) </label>
                         <input
-                            class="w-full"
+                            class="font-roboto w-full"
                             type="text"
                             name="lastName"
                             id="lastName"
                         />
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="email">
-                            Correo Electronico<span class="redText">*</span>
+                            Correo Electronico<span class="font-roboto redText">*</span>
                         </label>
                         <input
-                            class="w-full"
+                            class="font-roboto w-full"
                             type="email"
                             name="email"
                             placeholder="Escribe tu Correo Electronico Aqui"
@@ -193,48 +193,48 @@
                         />
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="Comentario">Queja</label>
                         <textarea
-                            class="w-full"
+                            class="font-roboto w-full"
                             name="Comentario"
                             id="Comentario"
                         ></textarea>
                     </div>
-                    <input class="col-span-full" type="submit" value="Enviar" />
+                    <input class="font-roboto col-span-full" type="submit" value="Enviar" />
                     <br />
                 </form>
                 <form
                     id="Sugerencia"
-                    class="TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
+                    class="font-roboto TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
                     action="#"
                 >
-                    <div class="flex flex-col items-start justify-between">
+                    <div class="font-roboto flex flex-col items-start justify-between">
                         <label for="tipo"> Nombre </label>
-                        <input class="w-full" type="text" name="name" id="name" />
+                        <input class="font-roboto w-full" type="text" name="name" id="name" />
                     </div>
-                    <div class="flex flex-col items-start justify-between">
+                    <div class="font-roboto flex flex-col items-start justify-between">
                         <label for="tipo"> Apellido(/s) </label>
                         <input
-                            class="w-full"
+                            class="font-roboto w-full"
                             type="text"
                             name="lastName"
                             id="lastName"
                         />
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="email">
-                            Correo Electronico<span class="redText">*</span>
+                            Correo Electronico<span class="font-roboto redText">*</span>
                         </label>
                         <input
-                            class="w-full"
+                            class="font-roboto w-full"
                             type="email"
                             name="email"
                             placeholder="Escribe tu Correo Electronico Aqui"
@@ -243,49 +243,49 @@
                         />
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="Comentario">Sugerencia</label>
                         <textarea
-                            class="w-full"
+                            class="font-roboto w-full"
                             name="Comentario"
                             id="Comentario"
                         >
                         </textarea>
                     </div>
-                    <input class="col-span-full" type="submit" value="Enviar" />
+                    <input class="font-roboto col-span-full" type="submit" value="Enviar" />
                     <br />
                 </form>
                 <form
                     id="Otros"
-                    class="TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
+                    class="font-roboto TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
                     action="#"
                 >
-                    <div class="flex flex-col items-start justify-between">
+                    <div class="font-roboto flex flex-col items-start justify-between">
                         <label for="tipo"> Nombre </label>
-                        <input class="w-full" type="text" name="name" id="name" />
+                        <input class="font-roboto w-full" type="text" name="name" id="name" />
                     </div>
-                    <div class="flex flex-col items-start justify-between">
+                    <div class="font-roboto flex flex-col items-start justify-between">
                         <label for="tipo"> Apellido(/s) </label>
                         <input
-                            class="w-full"
+                            class="font-roboto w-full"
                             type="text"
                             name="lastName"
                             id="lastName"
                         />
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="email">
-                            Correo Electronico<span class="redText">*</span>
+                            Correo Electronico<span class="font-roboto redText">*</span>
                         </label>
                         <input
-                            class="w-full"
+                            class="font-roboto w-full"
                             type="email"
                             name="email"
                             placeholder="Escribe tu Correo Electronico Aqui"
@@ -294,20 +294,20 @@
                         />
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                     </div>
                     <div
-                        class="flex flex-col items-start justify-between col-span-full"
+                        class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="Comentario">Comentario</label>
                         <textarea
-                            class="w-full"
+                            class="font-roboto w-full"
                             name="Comentario"
                             id="Comentario"
                         ></textarea>
                     </div>
-                    <input class="col-span-full" type="submit" value="Enviar" />
+                    <input class="font-roboto col-span-full" type="submit" value="Enviar" />
                     <br />
                 </form>
             </div>

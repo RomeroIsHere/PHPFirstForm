@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .customShadow {
     box-shadow:
@@ -23,6 +24,8 @@ textarea {
 
 @tailwind utilities;
 @theme {
+    --font-roboto: "Roboto", sans-serif; 
+
     --color-primary: #dbfffd;
     --color-secondary: #30b2a5;
     --color-accent: #ff0c00;
