@@ -1,27 +1,6 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.customShadow {
-    box-shadow:
-        inset 5px 5px 10px #ffffff8e,
-        inset -5px -5px 10px #0000008e;
-}
-
-.customShadow:hover {
-    box-shadow: 0px 0px 10px 5px #ffffff;
-}
-
-.ImageHighlight:hover {
-    box-shadow: 0px 0px 10px 5px #000000;
-    filter: brightness(0.4);
-}
-
-input,
-select,
-textarea {
-    border: 1px solid var(--color-secondary);
-}
-
 @tailwind utilities;
 @theme {
     --font-roboto: "Roboto", sans-serif; 
@@ -50,4 +29,26 @@ textarea {
             transform: scale(1);
         }
     }
+}
+
+
+.customShadow {
+    box-shadow:
+        inset 5px 5px 10px #ffffff8e,
+        inset -5px -5px 10px #0000008e;
+}
+
+.customShadow:hover {
+    box-shadow: 0px 0px 10px 5px #ffffff;
+}
+
+.ImageHighlight:hover {
+    box-shadow: 0px 0px 10px 5px #000000;
+    filter: brightness(0.4);
+}
+
+input,
+select,
+textarea {
+    border: 1px solid var(--color-secondary);
 }
