@@ -8,10 +8,16 @@ function openTab(evt, cityName) {
 
     Tabs = document.getElementsByClassName("Tab");
     for (i = 0; i < Tabs.length; i++) {
-        Tabs[i].className = Tabs[i].className.replace(" bg-primary", " bg-secondary");
+        Tabs[i].className = Tabs[i].className.replace(
+            " bg-primary",
+            " bg-secondary",
+        );
     }
     //Deactivate all Tab
 
     document.getElementById(cityName).style.display = "grid";
-    evt.currentTarget.className = evt.currentTarget.className.replace(" bg-secondary"," bg-primary");
+    evt.currentTarget.className = evt.currentTarget.className.replace(
+        " bg-secondary",
+        " bg-primary",
+    );
 }

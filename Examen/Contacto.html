@@ -18,7 +18,9 @@
                 aria-label="Sidebar"
                 onclick="toggleSideBar()"
             >
-                <div class="font-roboto h-full px-3 py-4 overflow-y-auto bg-primary">
+                <div
+                    class="font-roboto h-full px-3 py-4 overflow-y-auto bg-primary"
+                >
                     <ul class="font-roboto space-y-2 font-medium">
                         <li>
                             <a
@@ -33,7 +35,9 @@
                                 href="Platillos.html"
                                 class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="font-roboto ms-3"> Platillos </span>
+                                <span class="font-roboto ms-3">
+                                    Platillos
+                                </span>
                             </a>
                         </li>
                         <li>
@@ -41,7 +45,9 @@
                                 href="Especialidades.html"
                                 class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="font-roboto ms-3"> Especialidades </span>
+                                <span class="font-roboto ms-3">
+                                    Especialidades
+                                </span>
                             </a>
                         </li>
                         <li>
@@ -49,7 +55,9 @@
                                 href="Contacto.html"
                                 class="font-roboto flex items-center p-2 rounded-lg text-black hover:bg-accent hover:text-white group transition-all duration-300 ease-in-out"
                             >
-                                <span class="font-roboto ms-3"> Contactanos </span>
+                                <span class="font-roboto ms-3">
+                                    Contactanos
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -59,14 +67,16 @@
         <nav
             class="font-roboto h-25 px-10 bg-secondary flex flex-row justify-between text-black"
         >
-            <a href="./Index.html" class="font-roboto flex flex-row justify-start items-center">
-            
+            <a
+                href="./Index.html"
+                class="font-roboto flex flex-row justify-start items-center"
+            >
                 <img
                     src="resources/Logo.svg"
                     alt="Logo de Nightshade"
                     class="font-roboto h-1/2"
                 />
-                <span class="font-roboto "> Space Shooting Star Burgers </span>
+                <span class="font-roboto"> Space Shooting Star Burgers </span>
             </a>
 
             <button
@@ -86,19 +96,34 @@
             </button>
         </nav>
         <section class="font-roboto p-10 bg-primary">
-            <div class="font-roboto border h-full rounded-xl bg-secondary p-4 shadow-8xl">
-                <div class="font-roboto TabBar w-full px-4 flex flex-wrap justify-start gap-x-2 md:gap-5 pt-2">
-                    <button class="font-roboto Tab rounded-t border border-b-0 bg-primary" onclick="openTab(event, 'Reservar')">
+            <div
+                class="font-roboto border h-full rounded-xl bg-secondary p-4 shadow-8xl"
+            >
+                <div
+                    class="font-roboto TabBar w-full px-4 flex flex-wrap justify-start gap-x-2 md:gap-5 pt-2"
+                >
+                    <button
+                        class="font-roboto Tab rounded-t border border-b-0 bg-primary"
+                        onclick="openTab(event, 'Reservar')"
+                    >
                         Reservar
                     </button>
-                    </button>
-                    <button class="font-roboto Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Queja')">
+                    <button
+                        class="font-roboto Tab rounded-t border border-b-0 bg-secondary"
+                        onclick="openTab(event, 'Queja')"
+                    >
                         Queja
                     </button>
-                    <button class="font-roboto Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Sugerencia')">
+                    <button
+                        class="font-roboto Tab rounded-t border border-b-0 bg-secondary"
+                        onclick="openTab(event, 'Sugerencia')"
+                    >
                         Sugerencia
                     </button>
-                    <button class="font-roboto Tab rounded-t border border-b-0 bg-secondary" onclick="openTab(event, 'Otros')">
+                    <button
+                        class="font-roboto Tab rounded-t border border-b-0 bg-secondary"
+                        onclick="openTab(event, 'Otros')"
+                    >
                         Otros
                     </button>
                 </div>
@@ -107,11 +132,20 @@
                     class="font-roboto TabContent grid grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
                     action="#"
                 >
-                    <div class="font-roboto flex flex-col items-start justify-between">
+                    <div
+                        class="font-roboto flex flex-col items-start justify-between"
+                    >
                         <label for="tipo"> Nombre </label>
-                        <input class="font-roboto w-full" type="text" name="name" id="name" />
+                        <input
+                            class="font-roboto w-full"
+                            type="text"
+                            name="name"
+                            id="name"
+                        />
                     </div>
-                    <div class="font-roboto flex flex-col items-start justify-between">
+                    <div
+                        class="font-roboto flex flex-col items-start justify-between"
+                    >
                         <label for="tipo"> Apellido(/s) </label>
                         <input
                             class="font-roboto w-full"
@@ -124,7 +158,9 @@
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="email">
-                            Correo Electronico<span class="font-roboto redText">*</span>
+                            Correo Electronico<span class="font-roboto redText"
+                                >*</span
+                            >
                         </label>
                         <input
                             class="font-roboto w-full"
@@ -138,25 +174,29 @@
                     <div
                         class="font-roboto flex flex-col items-start justify-between"
                     >
-                        <label for="Day">
-                            Dia a Reservar
-                        </label>
-                        <input type="date" name="Day" id="day">
+                        <label for="Day"> Dia a Reservar </label>
+                        <input type="date" name="Day" id="day" />
                     </div>
                     <div
                         class="font-roboto flex flex-col items-start justify-between"
                     >
-                        <label for="Time">
-                            Tiempo a Reservar
-                        </label>
-                        <input type="time" name="Time" id="time"
+                        <label for="Time"> Tiempo a Reservar </label>
+                        <input
+                            type="time"
+                            name="Time"
+                            id="time"
                             min="13:00"
                             max="22:00"
                             value="13:00"
                             step="00:15"
-                            > <small>Horario De Reservas de 13:00 a 22:00</small>
+                        />
+                        <small>Horario De Reservas de 13:00 a 22:00</small>
                     </div>
-                    <input class="font-roboto col-span-full" type="submit" value="Enviar" />
+                    <input
+                        class="font-roboto col-span-full"
+                        type="submit"
+                        value="Enviar"
+                    />
                     <br />
                 </form>
                 <form
@@ -164,11 +204,20 @@
                     class="font-roboto TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
                     action="#"
                 >
-                    <div class="font-roboto flex flex-col items-start justify-between">
+                    <div
+                        class="font-roboto flex flex-col items-start justify-between"
+                    >
                         <label for="tipo"> Nombre </label>
-                        <input class="font-roboto w-full" type="text" name="name" id="name" />
+                        <input
+                            class="font-roboto w-full"
+                            type="text"
+                            name="name"
+                            id="name"
+                        />
                     </div>
-                    <div class="font-roboto flex flex-col items-start justify-between">
+                    <div
+                        class="font-roboto flex flex-col items-start justify-between"
+                    >
                         <label for="tipo"> Apellido(/s) </label>
                         <input
                             class="font-roboto w-full"
@@ -181,7 +230,9 @@
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="email">
-                            Correo Electronico<span class="font-roboto redText">*</span>
+                            Correo Electronico<span class="font-roboto redText"
+                                >*</span
+                            >
                         </label>
                         <input
                             class="font-roboto w-full"
@@ -194,8 +245,7 @@
                     </div>
                     <div
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
-                    >
-                    </div>
+                    ></div>
                     <div
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
@@ -206,7 +256,11 @@
                             id="Comentario"
                         ></textarea>
                     </div>
-                    <input class="font-roboto col-span-full" type="submit" value="Enviar" />
+                    <input
+                        class="font-roboto col-span-full"
+                        type="submit"
+                        value="Enviar"
+                    />
                     <br />
                 </form>
                 <form
@@ -214,11 +268,20 @@
                     class="font-roboto TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
                     action="#"
                 >
-                    <div class="font-roboto flex flex-col items-start justify-between">
+                    <div
+                        class="font-roboto flex flex-col items-start justify-between"
+                    >
                         <label for="tipo"> Nombre </label>
-                        <input class="font-roboto w-full" type="text" name="name" id="name" />
+                        <input
+                            class="font-roboto w-full"
+                            type="text"
+                            name="name"
+                            id="name"
+                        />
                     </div>
-                    <div class="font-roboto flex flex-col items-start justify-between">
+                    <div
+                        class="font-roboto flex flex-col items-start justify-between"
+                    >
                         <label for="tipo"> Apellido(/s) </label>
                         <input
                             class="font-roboto w-full"
@@ -231,7 +294,9 @@
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="email">
-                            Correo Electronico<span class="font-roboto redText">*</span>
+                            Correo Electronico<span class="font-roboto redText"
+                                >*</span
+                            >
                         </label>
                         <input
                             class="font-roboto w-full"
@@ -244,8 +309,7 @@
                     </div>
                     <div
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
-                    >
-                    </div>
+                    ></div>
                     <div
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
@@ -257,7 +321,11 @@
                         >
                         </textarea>
                     </div>
-                    <input class="font-roboto col-span-full" type="submit" value="Enviar" />
+                    <input
+                        class="font-roboto col-span-full"
+                        type="submit"
+                        value="Enviar"
+                    />
                     <br />
                 </form>
                 <form
@@ -265,11 +333,20 @@
                     class="font-roboto TabContent hidden grid-cols-1 md:grid-cols-2 bg-primary gap-5 p-5 border rounded-2xl"
                     action="#"
                 >
-                    <div class="font-roboto flex flex-col items-start justify-between">
+                    <div
+                        class="font-roboto flex flex-col items-start justify-between"
+                    >
                         <label for="tipo"> Nombre </label>
-                        <input class="font-roboto w-full" type="text" name="name" id="name" />
+                        <input
+                            class="font-roboto w-full"
+                            type="text"
+                            name="name"
+                            id="name"
+                        />
                     </div>
-                    <div class="font-roboto flex flex-col items-start justify-between">
+                    <div
+                        class="font-roboto flex flex-col items-start justify-between"
+                    >
                         <label for="tipo"> Apellido(/s) </label>
                         <input
                             class="font-roboto w-full"
@@ -282,7 +359,9 @@
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
                         <label for="email">
-                            Correo Electronico<span class="font-roboto redText">*</span>
+                            Correo Electronico<span class="font-roboto redText"
+                                >*</span
+                            >
                         </label>
                         <input
                             class="font-roboto w-full"
@@ -295,8 +374,7 @@
                     </div>
                     <div
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
-                    >
-                    </div>
+                    ></div>
                     <div
                         class="font-roboto flex flex-col items-start justify-between col-span-full"
                     >
@@ -307,7 +385,11 @@
                             id="Comentario"
                         ></textarea>
                     </div>
-                    <input class="font-roboto col-span-full" type="submit" value="Enviar" />
+                    <input
+                        class="font-roboto col-span-full"
+                        type="submit"
+                        value="Enviar"
+                    />
                     <br />
                 </form>
             </div>

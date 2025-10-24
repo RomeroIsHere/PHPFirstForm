@@ -3,7 +3,7 @@
 
 @tailwind utilities;
 @theme {
-    --font-roboto: "Roboto", sans-serif; 
+    --font-roboto: "Roboto", sans-serif;
 
     --color-primary: #dbfffd;
     --color-secondary: #30b2a5;
@@ -30,7 +30,6 @@
         }
     }
 }
-
 
 .customShadow {
     box-shadow:
